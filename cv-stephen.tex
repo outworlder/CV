@@ -26,14 +26,14 @@
 
 % Replace this with a link to your CV if you like, or set it empty
 % (as in \def\footerlink{}) to remove the link in the footer:
-\def\footerlink{http://github.com/projects/cv-template/}
+\def\footerlink{http://github.com/projects/cv.git/}
 
 % The following metadata will show up in the PDF properties
 \hypersetup{
   colorlinks = true,
   urlcolor = black,
   pdfauthor = {\name},
-  pdfkeywords = {economics, statistics, mathematics},
+  %pdfkeywords = {economics, statistics, mathematics},
   pdftitle = {\name: Curriculum Vitae},
   pdfsubject = {Curriculum Vitae},
   pdfpagemode = UseNone
@@ -66,13 +66,13 @@
 \setlength\parindent{0em}
 
 % Make lists without bullets
-\renewenvironment{itemize}{
-  \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
-  }
-}{
-  \end{list}
-}
+%% \renewenvironment{itemize}{
+%%   \begin{list}{}{
+%%     \setlength{\leftmargin}{1.5em}
+%%   }
+%% }{
+%%   \end{list}
+%% }
 
 \begin{document}
 
@@ -89,7 +89,7 @@
     Phone: & +11 55 85 962-1234 \\
     Fax: &  +11 55 85 962-5678 \\
     Email: & \href{mailto:spedrosa@gmail.com}{\tt spedrosa@gmail.com} \\
-    Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
+    Homepage: & \href{http://blog.paleolithic-computing.com}{\tt http://blog.paleolithic-computing.com} \\
   \end{tabular}
 \end{minipage}
 \end{flushright}
@@ -134,19 +134,35 @@ specific), unit tests and continuous integration (CruiseControl, Luntbuild),
 \section*{Employment}
 
 \begin{itemize}
-\item DETRAN-CE (Department of Transportation, CE), 2010 - Current
+\item DETRAN-CE (Department of Transportation, CE), 2010 - Present
 \item Instituto Atlântico, 2004 - 2009
 \item Media System, 2003 - 2004
 \end{itemize}
 
 \section*{Project Experience}
-\begin{tabular}{| l | p{8cm} | l | l | l |}
+\begin{tabular}{| l | p{7cm} | p{2cm} | p{2cm} | p{2cm} |}
   \hline
   \textbf{Duration} & \textbf{Objective} & \textbf{Customer} & \textbf{Customer Segment} & \textbf{Role} \\
   \hline
   6 months & Development of a completely new financial system using the Calypso platform, interfcing with existing mainframe systems. & HSBC & Financial & Analyst \\
   \hline
-  5 months & Creation of a complete bettig platform front-end for a very large betting operator (in Ruby on Rails) & LVS & Software Development & Developer
+  5 months & Creation of a complete bettig platform front-end for a very large betting operator (in Ruby on Rails) & LVS & Software Development & Developer \\
+  \hline
+  6 months & Participated in the creation of several core modules for a new application designed to replace a legacy system for a major commodities exchange market. & Kynetix & Software Development (Financial and insurance markets) & Developer \\
+  \hline
+  4 months & Design and development of an application to enable quick response, deployment and management of repair crew in case of failure in any of the customer's electric meters. & Landys+Gyr & Utility (Energy) & Lead Developer / Analyst \\
+  \hline
+  6 months & Creation of a C API (and its Java counterpart) integrated in the mobile OS to acquire and process inputs from motion-capture devices for mobile application developers & Samsung & Telecom & Developer / Analyst \\
+  \hline
+  6 months & Creation of a .NET application designed to manage, control and measure risks related to projects in the organization, as well as managing their workflow and member communication. & DELL Inc. & IT & Developer \\
+  \hline
+  1 year and a half & Development of a system intended to manage monetary resources for promoting the growth of the Amazon region. & Basa (Amazônia Bank) & Financial & Developer \\
+  \hline
+  4 months & Development of a mobile application and companion desktop application, designed to tors manage their patiens and appointments in and out of the office (.NET/.NET Compact framework) & Sony Ericsson & Telecom & Developer \\
+  \hline
+  3 months & Documentation and reverse-engineering of the customer's flagship product, to enable new developers to quickly familiarize themselves with the system. & Plusoft & CRM & Analyst \\
+  \hline
+  6 months & Development of a Windows Mobile application and webservice to streamline ship unloading operations. & CDC (Companhia das Docas do Ceará) & Government & Lead Developer \\
   \hline
 \end{tabular}
 
