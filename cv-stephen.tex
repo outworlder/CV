@@ -1,0 +1,163 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Stephen Pedrosa Eilert}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://github.com/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+\begin{flushright}
+
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +11 55 85 962-1234 \\
+    Fax: &  +11 55 85 962-5678 \\
+    Email: & \href{mailto:spedrosa@gmail.com}{\tt spedrosa@gmail.com} \\
+    Homepage: & \href{http://www.stat-or.unc.edu/}{\tt http://www.stat-or.unc.edu/} \\
+  \end{tabular}
+\end{minipage}
+\end{flushright}
+\section*{Experience Overview}
+
+Stephen Eilert has a Degree in Computer Science. He is a professional computing
+specialist with more than 5 years experience in advanced software analysis and design,
+having gathered knowledge on various platforms and programming languages. Among these
+are: C, C++, C\#, Java, Python and Ruby.
+Stephen Eilert has a Degree in Computer Science.
+He has advanced English language skills, having attained the Cambridge FSOL FCE
+Certificate.
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item B.S. Computer Science, Universidade Federal do Ceará, 2008.
+\end{itemize}
+
+\section*{Main Skills}
+\begin{itemize}
+  \item Microsoft Technologies (.NET Framework, API Win32, SQL Server)
+  \item Oracle Technologies (Java Platform including J2SE, J2EE and J2ME) and support
+    technologies such as Hibernate, Spring, Struts.
+    Oracle Database and Oracle Application Server.
+  \item Unix (Linux, NetBSD, Solaris, OS-X)
+  \item UML Modeling
+  \item Programming Languages: Ruby, Python, Lua, C, C++, C\#, Java, Objective C, Scheme, Lisp
+  \item Development methodologies such as RUP and agile such as SCRUM
+  \item Tools: Rational Rose, Rational Unified Modeler, Enterprise Architect, Microsoft
+Visual Studio, Eclipse, Ant, debuggers and profilers (language and platform
+specific), unit tests and continuous integration (CruiseControl, Luntbuild),
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+  \item Sun Certified Java Programmer - SCJP 5.0
+  \item Cambridge FSOL FCE - University of Cambridge
+\end{itemize}
+
+\section*{Employment}
+
+\begin{itemize}
+\item DETRAN-CE (Department of Transportation, CE), 2010 - Current
+\item Instituto Atlântico, 2004 - 2009
+\item Media System, 2003 - 2004
+\end{itemize}
+
+\section*{Project Experience}
+\begin{tabular}{| l | p{8cm} | l | l | l |}
+  \hline
+  \textbf{Duration} & \textbf{Objective} & \textbf{Customer} & \textbf{Customer Segment} & \textbf{Role} \\
+  \hline
+  6 months & Development of a completely new financial system using the Calypso platform, interfcing with existing mainframe systems. & HSBC & Financial & Analyst \\
+  \hline
+  5 months & Creation of a complete bettig platform front-end for a very large betting operator (in Ruby on Rails) & LVS & Software Development & Developer
+  \hline
+\end{tabular}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
