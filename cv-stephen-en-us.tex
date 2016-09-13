@@ -1,0 +1,174 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Stephen Pedrosa Eilert}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://github.com/outworlder/CV.git/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  %pdfkeywords = {it, Computer Science},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+%% \renewenvironment{itemize}{
+%%   \begin{list}{}{
+%%     \setlength{\leftmargin}{1.5em}
+%%   }
+%% }{
+%%   \end{list}
+%% }
+
+\begin{document}
+
+\begin{flushright}
+
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Celular: & +55 51 9976-6747 \\
+    Telefone: & +55 51 3239-6485 \\
+    Email: & \href{mailto:eilert@hp.com}{\tt eilert@hp.com} \\
+    Github: & \href{https://github.com/outworlder}{\tt github.com/outworlder}
+  \end{tabular}
+\end{minipage}
+\end{flushright}
+
+\section*{Summary}
+  Sofware developer with 12 years of experience in a variety of projects for national and international customers. Experience with the full software development lifecycle, from requirements, design, development, testing, deployment and system administration. Highly motivated by projects that challenge the technological status-quo. Somewhat paradoxically, likes to work closer to the machine, but also at the high levels of abstraction provided by functional languages. Follows with interest new technology developments, and will learn interesting technologies even when they are not directly relevant to the current work.
+
+\section*{Education}
+
+\begin{itemize}
+  \item BSc. Computer Science, Universidade Federal do Ceará, 2008.
+\end{itemize}
+
+\section*{Skills}
+\begin{itemize}
+  \item Oracle Technologies (Java Platform including J2SE, JEE and J2ME)
+  \item Microsoft Technologies (.NET Framework, API Win32, SQL Server, Team Foundation Server, PowerShell)
+  \item Extensive Linux knowledge. Some experience with other unix platforms such as NetBSD.
+  \item Programming Languages: Java, C\#, Javascript, Ruby, Python, Lua, C, C++, Objective-C, Scheme (preferred implementation is Chicken Scheme), Clojure, Lisp (sbcl)
+  \item Tools: HP LoadRunner, Enterprise Architect, Microsoft
+Visual Studio, Eclipse, Ant, Maven, Gradle, debuggers and profilers (language/platform specific),
+unit and integration tests (CruiseControl, Luntbuild, RSpec, autotest, TravisCI), XCode
+  \item Database Management Systems: PostgreSQL, Microsoft SQL Server, MySQL, MongoDB
+  \item Networking, including network protocols
+  \item Mobile Development (iOS, Android)
+  \item Web technologies: HTML5, CSS3, Javascript, Backbone.js, Angular.js
+  \item Cloud enviroments (Amazon, Rackspace, DigitalOcean e HP Cloud)
+  \item Agile Methodologies, such as Scrum
+  \item UML Modelling
+\end{itemize}
+
+\section*{Spoken Languages}
+\begin{itemize}
+  \item English (Advanced)
+  \item Portuguese (Native)
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+  \item Sun Certified Java Programmer - SCJP 5.0
+  \item Cambridge FSOL FCE - University of Cambridge
+\end{itemize}
+
+\section*{International Work Experience}
+\begin{itemize}
+  \item Gibraltar (British Overseas Territory) - 4 months
+\end{itemize}
+
+\section*{Professional Experience}
+
+\begin{enumerate}
+  \item
+  \textbf{Hewlett-Packard, 2014 - Present}
+  Software engineer, working with an experienced team to develop a high-profile platform that handles printer monitoring and supplies. Technologies range from .NET desktop and web apps, printer communication protocols and single-page web applications in Javascript/Backbone.js. Emphasis on code quality, with mandatory code reviews, high code test coverage and continuous integration.
+  \item
+  \textbf{Instituto Atlântico, 2013 - 2014}
+  Software developer and technical leader on contract for Hewlett-Packard.
+  \item
+  \textbf{Guilda (founder) / Codeminer 42, 2012 - 2013 } \\
+  Co-founded a company to develop Mobile (iOS and Android), C++ (with Qt) and Ruby on Rails applications for customers. Also provided consulting services and developed a cloud-based continuous integration system (currently discontinued) – one of the first in the market to use LXC containers. Acquired by Codeminer42.
+  \item
+  \textbf{DETRAN-CE, 2010 - 2012} \\
+  Internal software development. Web systems in Ruby on Rails, consuming data from PostgreSQL, MongoDB and Cassandra. Development of a fingerprint recognition platform using libfprint, in both C and Python. Creation of a high-performance middleware application in C to broker communication between internal and external systems with the government's mainframe.
+  \item
+  \textbf{Instituto Atlântico, 2004 - 2009 } \\
+  Developer and technical leader in several projects for a variety of customers. Among them, was the development of a new banking platform in Java (J2EE at the time) to replace the aging, mainframe-based system. Also of note was a image-based (using an optical-flow algorithm), motion detection module for a proprietary mobile opearating system. Spent some time in Gibraltar with a team to finish development and deploy the customer's new platform in Ruby on Rails.
+  \item
+  \textbf{Media System, 2003 - 2004} \\
+  Trainee. .NET desktop and mobile application development.
+\end{enumerate}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
